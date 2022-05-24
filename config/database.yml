@@ -1,0 +1,19 @@
+development:
+  host: 172.22.8.215
+  port: 5432
+  adapter: postgresql
+  encoding: unicode
+  database: bill_app
+  pool: 5
+  username: bill
+  password: 'mauras'
+
+  test:
+  host: 172.22.8.215
+  port: 5432
+  adapter: postgresql
+  encoding: unicode
+  database: bill_app
+  pool: 5
+  username: bill
+  password: 'mauras'
