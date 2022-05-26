@@ -1,5 +1,4 @@
 class RoomsController < ApplicationController
-  before_action :authenticate_user!
 
   def index
     @room = Room.new
@@ -8,6 +7,7 @@ class RoomsController < ApplicationController
   end
 
   def show
+    @user_logged = cookies[:user_id]
     @single_room = Room.find(params[:id])
     @room = Room.new
     @rooms = Room.public_rooms
@@ -19,6 +19,9 @@ class RoomsController < ApplicationController
 
     render 'rooms/index'
   end
+
+ 
+
 
   def create
     @room = Room.create(name: params['room']['name'])

@@ -1,0 +1,405 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ * {
+   
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        
+      }
+      
+ }
+ 	html{
+	overflow-y: auto;
+ }
+
+ /*html {
+   background-color: #282828;
+ }
+ */
+
+  .new_room {
+      position: relative;
+      top: 50px;
+      /*background-color: #282828; */
+  }
+ 
+  
+  .active {
+    background-color: #44c767;
+  }
+
+  .tahome{
+    border: 2px solid #765942;
+	  border-radius: 10px;
+	  height: 500px;
+	  width: 600px;
+    resize: none;
+  }
+  .tahome:active, .tahome_input:active,.tahome_input:focus,
+  .tahome:focus {
+    outline:none;
+  }
+
+  .tahome_input{
+    border: 2px solid #765942;
+	  border-radius: 10px;
+	  height: 50px;
+	  width: 600px;
+    resize: none;
+  }
+
+  .ta5 {
+	border: 2px solid #765942;
+	border-radius: 10px;
+	height: 60px;
+	width: 230px;
+    resize: none;
+}
+
+.ta5:active,
+.ta5:focus {
+    outline:none;
+}
+
+.ta4 {
+  border-radius: 10px;
+  border: 2px #765942 solid;
+  width: 230px;
+  height: 30px;
+  resize: none;
+}
+
+.ta4:active,
+.ta4:focus {
+    outline:none;
+}
+
+
+.date {
+  color: wheat;
+  position: relative;
+  top: 130px;
+}
+
+
+
+*{
+	box-sizing:border-box;
+}
+body{
+	background-color:#abd9e9;
+	font-family:Arial;
+}
+#container{
+	width:750px;
+	height:800px;
+	background:#eff3f7;
+	margin:0 auto;
+	font-size:0;
+	border-radius:5px;
+	overflow:hidden;
+}
+aside{
+	width:260px;
+	height:800px;
+	background-color:#3b3e49;
+	display:inline-block;
+	font-size:15px;
+	vertical-align:top;
+}
+main{
+	width:490px;
+	height:800px;
+	display:inline-block;
+	font-size:15px;
+	vertical-align:top;
+}
+
+aside header{
+	padding:30px 20px;
+}
+aside input{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	padding:0 50px 0 20px;
+	background-color:#5e616a;
+	border:none;
+	border-radius:3px;
+	color:#fff;
+	background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_search.png);
+	background-repeat:no-repeat;
+	background-position:170px;
+	background-size:40px;
+}
+aside input::placeholder{
+	color:#fff;
+}
+aside ul{
+	padding-left:0;
+	margin:0;
+	list-style-type:none;
+	overflow-y:scroll;
+	height:690px;
+}
+aside li{
+	padding:10px 0;
+}
+aside li:hover{
+	background-color:#5e616a;
+}
+h2,h3{
+	margin:0;
+}
+aside li img{
+	border-radius:50%;
+	margin-left:20px;
+	margin-right:8px;
+}
+aside li div{
+	display:inline-block;
+	vertical-align:top;
+	margin-top:12px;
+}
+aside li h2{
+	font-size:14px;
+	color:#fff;
+	font-weight:normal;
+	margin-bottom:5px;
+}
+aside li h3{
+	font-size:12px;
+	color:#7e818a;
+	font-weight:normal;
+}
+
+.status{
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	display:inline-block;
+	margin-right:7px;
+}
+.green{
+	background-color:#58b666;
+}
+.orange{
+	background-color:#ff725d;
+}
+.blue{
+	background-color:#6fbced;
+	margin-right:0;
+	margin-left:7px;
+}
+
+main header{
+	height:110px;
+	padding:30px 20px 30px 40px;
+}
+main header > *{
+	display:inline-block;
+	vertical-align:top;
+}
+main header img:first-child{
+	border-radius:50%;
+}
+main header img:last-child{
+	width:24px;
+	margin-top:8px;
+}
+main header div{
+	margin-left:10px;
+	margin-right:145px;
+}
+main header h2{
+	font-size:16px;
+	margin-bottom:5px;
+}
+main header h3{
+	font-size:14px;
+	font-weight:normal;
+	color:#7e818a;
+}
+
+#chat{
+	padding-left:0;
+	margin:0;
+	list-style-type:none;
+	overflow-y:scroll;
+	height:535px;
+	border-top:2px solid #fff;
+	border-bottom:2px solid #fff;
+}
+#chat li{
+	padding:10px 30px;
+}
+#chat h2,#chat h3{
+	display:inline-block;
+	font-size:13px;
+	font-weight:normal;
+}
+#chat h3{
+	color:#bbb;
+}
+#chat .entete{
+	margin-bottom:5px;
+}
+#chat .message{
+	padding:20px;
+	color:#fff;
+	line-height:25px;
+	max-width:90%;
+	display:inline-block;
+	text-align:left;
+	border-radius:5px;
+}
+#chat .me{
+	text-align:right;
+}
+#chat .you .message{
+	background-color:#58b666;
+}
+#chat .me .message{
+	background-color:#6fbced;
+}
+#chat .triangle{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 10px 10px 10px;
+}
+#chat .you .triangle{
+		border-color: transparent transparent #58b666 transparent;
+		margin-left:15px;
+}
+#chat .me .triangle{
+		border-color: transparent transparent #6fbced transparent;
+		margin-left:375px;
+}
+
+main footer{
+	height:155px;
+	padding:20px 30px 10px 20px;
+}
+main footer textarea{
+	resize:none;
+	border:none;
+	display:block;
+	width:100%;
+	height:80px;
+	border-radius:3px;
+	padding:20px;
+	font-size:13px;
+	margin-bottom:13px;
+}
+main footer textarea::placeholder{
+	color:#ddd;
+}
+main footer img{
+	height:30px;
+	cursor:pointer;
+}
+main footer a{
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#6fbced;
+	vertical-align:top;
+	margin-left:333px;
+	margin-top:5px;
+	display:inline-block;
+}
+
+.sendButton {
+    background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:15px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-left:100px;
+    margin-top: 5px;
+}
+.sendButton:hover {
+	background-color:#5cbf2a;
+}
+.sendButton:active {
+	position:relative;
+	top:1px;
+}
+
+.nav_bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #282828;
+    position: fixed;
+    top: 0;
+    width: 90%;
+  }
+
+  .nav_bar li {
+    float: left;
+    border-right: 1px solid #bbb;
+  }
+
+  .nav_bar li a {
+	font-size: 16px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  .nav_bar li a:hover {
+    background-color: #111;
+  }
+
+  .log_out {
+	  display: block;
+	background: none!important;
+	border: none;
+	padding: 14px 16px;
+	font-size: 16px;
+	/*optional*/
+	/*input has OS specific font-family*/
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+
+  }
+
+
+.room_name a {
+	color: white;
+	text-decoration: none;
+}
+
+
+

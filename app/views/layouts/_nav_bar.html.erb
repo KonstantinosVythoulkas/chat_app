@@ -1,0 +1,12 @@
+<div class="nav_bar">
+<ul>
+  <li><a href="<%= root_path %>"> <%= image_tag "logo.png", height: 13, width: 30 %></a></li>
+  <li class="active"><a href="<%= root_path  %>">Home</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">About</a></li>
+  <li style="float:right"><%= button_to "Logout", destroy_user_session_path, method: :delete , class: "log_out"%></li>
+  <li style="float:right"><a href="#">New Room</a></li>
+  <li style="float:right"><a href="#"> Rooms</a></li>
+  <li style="float:right"><a href="#"> DMs</a></li>
+</ul>
+</div>
