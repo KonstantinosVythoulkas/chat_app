@@ -22,13 +22,13 @@
 		<ul id="chat">
 <%= turbo_stream_from @single_room%>
 <div id="messages" data-controller="scroll">
-  <%= render @messages if @messages != nil %>
+  <%= render @messages %>
 </div>
 			
 
 		</ul>
 		<footer>
- <%= render partial: 'layouts/new_message_form' if @messages != nil%>
+ <%= render partial: 'layouts/new_message_form' %>
 		</footer>
 	</main>
 </div>

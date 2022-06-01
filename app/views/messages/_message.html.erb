@@ -1,9 +1,14 @@
+<% if $live_user != message.user.id %>
+<% puts "###############"%>
+<% puts $live_user %>
 <li class="you cont-<%= message.user.id %>">
 	<div class="msg-<%= message.user.id %>">
 		<div class="entete">
 			<span class="status green"></span>
-				<h2><%= message.user.email %></h2>
+				<h2><%= message.user.username %></h2>
+				<br>
 					<h3>10:12AM, Today</h3>
+					
 		</div>
 			<div class="triangle"></div>
 				<div class="message">
@@ -11,3 +16,20 @@
 				</div>
 			</div>
 </li>
+<% else %>
+<li class="me cont-<%= message.user.id %>">
+	<div class="msg-<%= message.user.id %>">
+		<div class="entete">
+			<span class="status green"></span>
+				<h2><%= message.user.username %></h2>
+				<br>
+					<h3>10:12AM, Today</h3>
+					
+		</div>
+			<div class="triangle"></div>
+				<div class="message">
+					<%= message.body %>
+				</div>
+			</div>
+</li>
+<% end %>

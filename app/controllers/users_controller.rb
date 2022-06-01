@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def show
+    $live_user = current_user.id
     @user = User.find(params[:id])
     @users = User.all_except(current_user)
 
@@ -10,10 +11,11 @@ class UsersController < ApplicationController
 
     @message = Message.new
     @messages = @single_room.messages.order(created_at: :asc)
-    render 'rooms/index'
+    render 'pages/home'
   end
 
   def index
+    
 
   end
 

@@ -1,4 +1,9 @@
 class MessagesController < ApplicationController
+  before_action :check_user
+
+  def check_user
+    $live_user = current_user.id
+  end
 
     def create
         @message = current_user.messages.create(body: msg_params[:body],

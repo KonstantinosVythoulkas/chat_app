@@ -1,5 +1,5 @@
 development:
-  host: 172.22.8.215
+  host: 172.22.6.50
   port: 5432
   adapter: postgresql
   encoding: unicode
@@ -9,7 +9,7 @@ development:
   password: 'mauras'
 
   test:
-  host: 172.22.8.215
+  host: 172.22.6.50
   port: 5432
   adapter: postgresql
   encoding: unicode
